@@ -1,5 +1,6 @@
 public class Elf extends GameCharacter {
-    private static int HP = 10, POWER = 10;
+    private static final int HP = 10,
+            POWER = 10;
 
     public Elf() {
         setHp(HP);

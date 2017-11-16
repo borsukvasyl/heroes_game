@@ -1,5 +1,6 @@
 public class Hobbit extends GameCharacter {
-    private static int HP = 3, POWER = 0;
+    private static final int HP = 3,
+            POWER = 0;
 
     public Hobbit() {
         setHp(HP);

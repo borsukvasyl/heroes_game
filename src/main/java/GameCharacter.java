@@ -6,7 +6,10 @@ abstract class GameCharacter {
 
     public GameCharacter() { }
 
-    abstract public void kick(GameCharacter enemy);
+    protected GameCharacter(int minHp, int maxHp, int minPower, int maxPower) {
+        hp = new Random().nextInt(maxHp - minHp + 1) + minHp;
+        power = new Random().nextInt(maxPower - minPower + 1) + minPower;
+    }
 
     public boolean isAlive() {
         return hp > 0;
@@ -38,8 +41,5 @@ abstract class GameCharacter {
         }
     }
 
-    protected GameCharacter(int minHp, int maxHp, int minPower, int maxPower) {
-        hp = new Random().nextInt(maxHp - minHp + 1) + minHp;
-        power = new Random().nextInt(maxPower - minPower + 1) + minPower;
-    }
+    abstract public void kick(GameCharacter enemy);
 }
