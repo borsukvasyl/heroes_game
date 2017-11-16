@@ -1,7 +1,9 @@
 public class Elf extends GameCharacter {
+    private static int HP = 10, POWER = 10;
+
     public Elf() {
-        setHp(10);
-        setPower(10);
+        setHp(HP);
+        setPower(POWER);
     }
 
     @Override

@@ -1,8 +1,10 @@
 public class King extends GameCharacter {
+    private static int MIN_HP = 5, MAX_HP = 15, MIN_POWER = 5, MAX_POWER = 15;
+
     private KickBehavior kickBehavior = new Sword();
 
     public King() {
-        super(5, 15, 5, 15);
+        super(MIN_HP, MAX_HP, MIN_POWER, MAX_POWER);
     }
 
     @Override

@@ -17,7 +17,7 @@ public class GameManager {
             System.out.println(String.format("%s hp=%d", c2.getClass().getName(), c2.getHp()));
 
             if (!c2.isAlive()) {
-                System.out.println(String.format("%s wins",c1.getClass().getName()));
+                System.out.println(String.format("%s wins", c1.getClass().getName()));
                 return;
             }
 

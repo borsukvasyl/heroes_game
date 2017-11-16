@@ -1,7 +1,9 @@
 public class Hobbit extends GameCharacter {
+    private static int HP = 3, POWER = 0;
+
     public Hobbit() {
-        setHp(3);
-        setPower(0);
+        setHp(HP);
+        setPower(POWER);
     }
 
     public void toCry() {

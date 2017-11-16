@@ -4,16 +4,11 @@ abstract class GameCharacter {
     private int power;
     private int hp;
 
-    public GameCharacter() {}
-
-    protected GameCharacter(int min_hp, int max_hp, int min_power, int max_power){
-            hp = new Random().nextInt(max_hp - min_hp + 1) + min_hp;
-            power = new Random().nextInt(max_power - min_power + 1) + min_power;
-    }
+    public GameCharacter() { }
 
     abstract public void kick(GameCharacter enemy);
 
-    boolean isAlive() {
+    public boolean isAlive() {
         return hp > 0;
     }
 
@@ -41,5 +36,10 @@ abstract class GameCharacter {
         else {
             hp = newHp;
         }
+    }
+
+    protected GameCharacter(int minHp, int maxHp, int minPower, int maxPower) {
+        hp = new Random().nextInt(maxHp - minHp + 1) + minHp;
+        power = new Random().nextInt(maxPower - minPower + 1) + minPower;
     }
 }
