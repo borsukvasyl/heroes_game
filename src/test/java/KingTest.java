@@ -7,7 +7,9 @@ public class KingTest {
     public void kick() throws Exception {
         Hobbit hobbit = new Hobbit();
         King king = new King();
-        king.kick(hobbit);
+        while (hobbit.isAlive()) {
+            king.kick(hobbit);
+        }
         assertFalse(hobbit.isAlive());
     }
 }

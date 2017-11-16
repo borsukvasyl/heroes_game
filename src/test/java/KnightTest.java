@@ -8,7 +8,7 @@ public class KnightTest {
         Hobbit hobbit = new Hobbit();
         Knight knight = new Knight();
         knight.kick(hobbit);
-        if (hobbit.isAlive()) {
+        while (hobbit.isAlive()) {
             knight.kick(hobbit);
         }
         assertFalse(hobbit.isAlive());
