@@ -9,7 +9,7 @@ public class GameManager {
         GameCharacter gameCharacterCopy;
 
         System.out.println(String.format("%s: hp=%d, power=%d", c1.getClass().getName(), c1.getHp(), c1.getPower()));
-        System.out.println(String.format("%s: hp=%d, power=%d\n", c2.getClass().getName(), c2.getHp(), c2.getPower()));
+        System.out.println(String.format("%s: hp=%d, power=%d%n", c2.getClass().getName(), c2.getHp(), c2.getPower()));
 
         while (true) {
             System.out.println(String.format("%s attacks %s", c1.getClass().getName(), c2.getClass().getName()));
